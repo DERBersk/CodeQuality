@@ -4,8 +4,7 @@
   "description": "Testing functionality and maintainability in a Webdevelopment enviroment",
   "main": "app.js",
   "scripts": {
-    "test": "jest",
-    "lint": "eslint *.js"
+    "test": "jest"
   },
   "keywords": [
     "js",
