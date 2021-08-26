@@ -1,4 +1,4 @@
-name: Unit-Testing
+name: Lint
 
 on:
   push:
@@ -21,8 +21,13 @@ jobs:
           node-version: ${{matrix.node-version}}
       - run: npm i
 
-      - name: Run Jest Unit-Testing
+      - name: eslint install
         uses: actions/setup-node@v1
         with:
           node-version: ${{matrix.node-version}}
-      - run: npm run test main.test.js
+      - run: npm install eslint
+
+      - name: ESLint Action eslintrc
+        run: npx eslint *.js
+
+
