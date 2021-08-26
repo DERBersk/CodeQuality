@@ -1,11 +1,15 @@
 const puppeteer = require('puppeteer');
 
+/*
+Wenn all.test.js ausgeführt wird, müssen die file-paths angepasst werden.
+ */
+
 test('end2end: addition', async ()=>{
   const browser = await puppeteer.launch({
     headless: true,
   });
   const page = await browser.newPage();
-  await page.goto('file:///C:/Users/domin/Documents/Repositories/CodeQuality/index.html');
+  await page.goto('file:///C:/Users/domin/Documents/Repositories/CodeQuality/index.html'); // Hier
   await page.type('#num1','3');
   await page.type('#num2','2');
   await page.click('#btnpl');
@@ -18,7 +22,7 @@ test('end2end substraction', async ()=>{
     headless: true,
   });
   const page = await browser.newPage();
-  await page.goto('file:///C:/Users/domin/Documents/Repositories/CodeQuality/index.html');
+  await page.goto('file:///C:/Users/domin/Documents/Repositories/CodeQuality/index.html'); // Hier
   await page.type('#num1','3');
   await page.type('#num2','2');
   await page.click('#btnmi');
