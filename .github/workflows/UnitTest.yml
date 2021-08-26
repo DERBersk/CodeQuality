@@ -21,6 +21,12 @@ jobs:
           node-version: ${{matrix.node-version}}
       - run: npm i
 
+      - name: eslint install
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{matrix.node-version}}
+      - run: npm install eslint
+
       - name: Run Jest Unit-Testing
         uses: actions/setup-node@v1
         with:
@@ -28,10 +34,6 @@ jobs:
       - run: npm run test
       
       - name: ESLint Action eslintrc
-        uses: mrdivyansh/eslint-action@v1.0.7
-        with:
-          repo-token: ${{secrets.GITHUB_TOKEN}}
-          eslint-rc: ../../.eslintrc.json
-          execute-on-files: ../../
+        run: style:lint
          
         
