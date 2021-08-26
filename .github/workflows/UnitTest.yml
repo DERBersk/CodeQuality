@@ -26,3 +26,9 @@ jobs:
         with:
           node-version: ${{matrix.node-version}}
       - run: npm run test
+      
+      - name: Run ESLint js testing
+        uses: mrdivyansh/eslint-action@v1.0.7
+        with:
+          eslint-rc: ../../.eslintrc.json
+          execute-on-files: ../../**.js
