@@ -27,8 +27,11 @@ jobs:
           node-version: ${{matrix.node-version}}
       - run: npm run test
       
-      - name: Run ESLint js testing
+      - name: ESLint Action eslintrc
         uses: mrdivyansh/eslint-action@v1.0.7
         with:
+          repo-token: ${{secrets.GITHUB_TOKEN}}
           eslint-rc: ../../.eslintrc.json
-          execute-on-files: ../../**.js
+          execute-on-files: ../../
+         
+        
