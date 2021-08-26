@@ -34,6 +34,6 @@ jobs:
       - run: npm run test
       
       - name: ESLint Action eslintrc
-        run: style:lint
+        run: npm run style:lint
          
         
