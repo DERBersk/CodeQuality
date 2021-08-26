@@ -21,6 +21,7 @@
   "author": "Dominik Eitner",
   "license": "WWU",
   "devDependencies": {
+    "eslint": "^7.32.0",
     "jest": "^27.0.6",
     "jslint": "^0.12.1",
     "puppeteer": "^10.2.0",

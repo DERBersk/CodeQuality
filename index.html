@@ -4,18 +4,19 @@
     <meta charset="UTF-8">
     <title>Das ist eine Testseite</title>
 
-    <script type="text/javascript" src="./main.js"></script>
+    <script src="./main.js" type="text/javascript"></script>
 </head>
 <body>
     <h1>Das ist eine Testseite</h1>
 
     <p>Wenn du auf den folgenden Knopf drückst, wird der Wert vom ersten Eingabefeld mit dem anderen Eingabefeld addiert</p>
 
-    <input type="text" id="adder1"><br><br>
-    <input type="text" id="adder2"><br><br>
-    <input type="submit" onclick="addi()" id="btn" class="button" value="Addieren">
+    <input id="num1" type="text"><br><br>
+    <input id="num2" type="text"><br><br>
+    <input class="button" id="btnpl" onclick="addi()" type="submit" value="+">
+    <input class="button" id="btnmi" onclick="subi()" type="submit" value="-">
 
     <p>Ergebnis: </p>
-    <input type="text" id="res" readonly="true">
+    <input id="res" readonly="true" type="text">
 </body>
 </html>
