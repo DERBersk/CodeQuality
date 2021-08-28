@@ -13,15 +13,25 @@
     "rules": {
         "indent": [
             "error",
-            2
+            "tab"
         ],
         "quotes": [
             "error",
-            "single"
+            "double"
         ],
         "semi": [
             "error",
             "always"
-        ]
+        ],
+        "id-length": [
+            "error",
+            {
+                "min": 3,
+                "max": 20
+            }
+        ],
+        "no-multiple-empty-lines": "error",
+        "camelcase": "error",
+        "keyword-spacing": "error"
     }
 }
