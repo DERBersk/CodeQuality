@@ -1,8 +1,11 @@
+/*Konstante für Nachkommastellen instanzieren*/
+const NACHKOMMA_STELLEN = 5;
+
 const add = function (aVal, bVal) {
 	if (isNaN(aVal) || isNaN(bVal)) {
 		return "Not a Number";
 	} else {
-		return roundTo((aVal + bVal),5);
+		return roundTo((aVal + bVal),NACHKOMMA_STELLEN);
 	}
 };
 
@@ -10,7 +13,7 @@ const sub = function (aVal, bVal) {
 	if (isNaN(aVal) || isNaN(bVal)) {
 		return "Not a Number";
 	} else {
-		return roundTo((aVal - bVal),5);
+		return roundTo((aVal - bVal),NACHKOMMA_STELLEN);
 	}
 };
 
@@ -18,7 +21,7 @@ const mul = function (aVal, bVal) {
 	if (isNaN(aVal) || isNaN(bVal)) {
 		return "Not a Number";
 	} else {
-		return roundTo((aVal * bVal),5);
+		return roundTo((aVal * bVal),NACHKOMMA_STELLEN);
 	}
 };
 
@@ -26,7 +29,7 @@ const div = function (aVal, bVal) {
 	if (isNaN(aVal) || isNaN(bVal)) {
 		return "Not a Number";
 	} else {
-		return roundTo((aVal / bVal),5);
+		return roundTo((aVal / bVal),NACHKOMMA_STELLEN);
 	}
 };
 
