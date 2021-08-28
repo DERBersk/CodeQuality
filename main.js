@@ -2,7 +2,7 @@ const add = function (aVal, bVal) {
 	if (isNaN(aVal) || isNaN(bVal)) {
 		return "Not a Number";
 	} else {
-		return aVal + bVal;
+		return roundTo((aVal + bVal),5);
 	}
 };
 
@@ -10,7 +10,7 @@ const sub = function (aVal, bVal) {
 	if (isNaN(aVal) || isNaN(bVal)) {
 		return "Not a Number";
 	} else {
-		return aVal - bVal;
+		return roundTo((aVal - bVal),5);
 	}
 };
 
@@ -18,7 +18,7 @@ const mul = function (aVal, bVal) {
 	if (isNaN(aVal) || isNaN(bVal)) {
 		return "Not a Number";
 	} else {
-		return aVal * bVal;
+		return roundTo((aVal * bVal),5);
 	}
 };
 
@@ -26,7 +26,7 @@ const div = function (aVal, bVal) {
 	if (isNaN(aVal) || isNaN(bVal)) {
 		return "Not a Number";
 	} else {
-		return aVal / bVal;
+		return roundTo((aVal / bVal),5);
 	}
 };
 
@@ -35,6 +35,17 @@ function transferCToP (aVal){
 		return "transferCToP requires an input!";
 	}
 	var res = aVal.replace(",", ".");
+	return res;
+}
+
+function roundTo (aVal, fractionDigits){
+	if (aVal == null){
+		return "roundTo muss aVal übergeben werden!";
+	}
+	if (fractionDigits == null){
+		return "roundTo muss fractionDigits übergeben werden!";
+	}
+	var res = (Math.round(aVal*(Math.pow(10,fractionDigits)))/(Math.pow(10,fractionDigits)));
 	return res;
 }
 
@@ -70,4 +81,4 @@ function divi () {
 	result.value = answer;
 }
 
-module.exports = { add, sub , mul, div, transferCToP};
+module.exports = { add, sub , mul, div, transferCToP, roundTo};

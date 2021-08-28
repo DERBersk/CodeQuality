@@ -28,6 +28,7 @@ h1{
     text-decoration: none;
     padding: 3px 10px;
     display: inline-block;
+    font-size: 25px;
 }
 
 .in[type=text] {
@@ -39,4 +40,5 @@ h1{
     border-radius: 4px;
     text-align: center;
     font-size: 25px;
+    font-weight: bold;
 }

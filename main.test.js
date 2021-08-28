@@ -1,4 +1,4 @@
-const { add, sub, mul, div, transferCToP } = require("./main");
+const { add, sub, mul, div, transferCToP, roundTo} = require("./main");
 
 /*testen des add modules*/
 test("should output 2+3=5, NULL insurance", () => {
@@ -37,7 +37,7 @@ test("should output 3/2=1.5, NULL insurance",() => {
 });
 
 /*Testen des transferCToP modules*/
-test("should output 2,2.3,4=2.2.3.4, NULL insurance",() => {
+test("should output transferCToP(2,2)=2.2, NULL insurance",() => {
 	const testtext = transferCToP("2,2");
 	expect(testtext).toBe("2.2");
 
@@ -45,3 +45,14 @@ test("should output 2,2.3,4=2.2.3.4, NULL insurance",() => {
 	expect(nulltest).toBe("transferCToP requires an input!");
 });
 
+/*Testen des roundTo modules*/
+test("should output rountTo(2.95,0)=3, roundTo(3.355555,3)=3.356, NULL insurance",() => {
+	const testtext = roundTo(2.95,1);
+	expect(testtext).toBe(3);
+
+	const roundtext = roundTo(3.355555,4);
+	expect(roundtext).toBe(3.3556);
+
+	const nulltest = roundTo(aVal=12);
+	expect(nulltest).toBe("roundTo muss fractionDigits übergeben werden!");
+});
