@@ -1,6 +1,9 @@
 /*Konstante für Nachkommastellen instanzieren*/
 const NACHKOMMA_STELLEN = 5;
 
+/*
+Addiert die Zahl aVal und bVal
+*/
 const add = function (aVal, bVal) {
 	if (isNaN(aVal) || isNaN(bVal)) {
 		return "Not a Number";
@@ -9,6 +12,9 @@ const add = function (aVal, bVal) {
 	}
 };
 
+/*
+Subtrahiert die Zahl aVal von bVal
+*/
 const sub = function (aVal, bVal) {
 	if (isNaN(aVal) || isNaN(bVal)) {
 		return "Not a Number";
@@ -17,6 +23,9 @@ const sub = function (aVal, bVal) {
 	}
 };
 
+/*
+Multipliziert die Zahl aVal und bVal
+*/
 const mul = function (aVal, bVal) {
 	if (isNaN(aVal) || isNaN(bVal)) {
 		return "Not a Number";
@@ -25,6 +34,9 @@ const mul = function (aVal, bVal) {
 	}
 };
 
+/*
+Dividiert die Zahl aVal durch bVal
+*/
 const div = function (aVal, bVal) {
 	if (isNaN(aVal) || isNaN(bVal)) {
 		return "Not a Number";
@@ -33,6 +45,9 @@ const div = function (aVal, bVal) {
 	}
 };
 
+/*
+Ersetzt alle Kommata mit Punkten im String
+*/
 function transferCToP (aVal){
 	if (aVal == null){
 		return "transferCToP requires an input!";
@@ -41,6 +56,9 @@ function transferCToP (aVal){
 	return res;
 }
 
+/*
+Rundet den Wert aVal auf fractionDigits
+*/
 function roundTo (aVal, fractionDigits){
 	if (aVal == null){
 		return "roundTo muss aVal übergeben werden!";
@@ -52,6 +70,9 @@ function roundTo (aVal, fractionDigits){
 	return res;
 }
 
+/*
+Nimmt die Werte aus Textfeld 1 und 2 und schreibt das Ergebnis der Addition der Zahlen in das Textfeld res
+*/
 function addi () {
 	let first = document.getElementById("num1").value;
 	let second = document.getElementById("num2").value;
@@ -60,6 +81,9 @@ function addi () {
 	result.value = answer;
 }
 
+/*
+Nimmt die Werte aus Textfeld 1 und 2 und schreibt das Ergebnis der Subtraktion der Zahlen in das Textfeld res
+*/
 function subi () {
 	let first = document.getElementById("num1").value;
 	let second = document.getElementById("num2").value;
@@ -68,6 +92,9 @@ function subi () {
 	result.value = answer;
 }
 
+/*
+Nimmt die Werte aus Textfeld 1 und 2 und schreibt das Ergebnis der Multiplikation der Zahlen in das Textfeld res
+*/
 function muli () {
 	let first = document.getElementById("num1").value;
 	let second = document.getElementById("num2").value;
@@ -76,6 +103,9 @@ function muli () {
 	result.value = answer;
 }
 
+/*
+Nimmt die Werte aus Textfeld 1 und 2 und schreibt das Ergebnis der Division der Zahlen in das Textfeld res
+*/
 function divi () {
 	let first = document.getElementById("num1").value;
 	let second = document.getElementById("num2").value;

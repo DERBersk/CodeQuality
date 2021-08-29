@@ -4,6 +4,9 @@ const puppeteer = require("puppeteer");
 Wenn all.test.js ausgeführt wird, müssen die file-paths angepasst werden.
  */
 
+/*
+Integrationstest: Testet Website, ob Addition funktioniert
+*/
 test("end2end: addition", async ()=>{
 	const browser = await puppeteer.launch({
 		headless: true,
@@ -17,7 +20,9 @@ test("end2end: addition", async ()=>{
 	expect(testData).toBe("5");
 },10000);
 
-
+/*
+Integrationstest: Testet Website, ob Subtraktion funktioniert
+*/
 test("end2end substraction", async ()=>{
 	const browser = await puppeteer.launch({
 		headless: true,
@@ -31,6 +36,9 @@ test("end2end substraction", async ()=>{
 	expect(testData).toBe("1");
 },10000);
 
+/*
+Integrationstest: Testet Website, ob Division funktioniert
+*/
 test("end2end division", async ()=>{
 	const browser = await puppeteer.launch({
 		headless: true,
@@ -44,6 +52,9 @@ test("end2end division", async ()=>{
 	expect(testData).toBe("1.5");
 },10000);
 
+/*
+Integrationstest: Testet Website, ob Multiplikation funktioniert
+*/
 test("end2end multiplication", async ()=>{
 	const browser = await puppeteer.launch({
 		headless: true,

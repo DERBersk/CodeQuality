@@ -1,3 +1,6 @@
+/*
+Stylesheet für gesamte Website
+*/
 html{
     font-family: Arial,"lucida console",sans-serif;
     color: lightgray;
@@ -5,11 +8,17 @@ html{
     font-size: 25px;
 }
 
+/*
+Stylesheet für Überschrift
+*/
 h1{
     text-align: center;
     color: #f7f8f8;
 }
 
+/*
+Stylesheet für div von gesamter Architektur
+*/
 .calculator{
     margin: auto;
     width: 50%;
@@ -20,6 +29,9 @@ h1{
     text-align: center;
 }
 
+/*
+Stylesheet für Inputfeld für +,-,*,/ Buttons
+*/
 .button{
     background-color: lightgreen;
     border: none;
@@ -32,6 +44,9 @@ h1{
     border-radius: 4px;
 }
 
+/*
+Stylsheet für Inputfeld für Zahlen und Outputfeld
+*/
 .in[type=text] {
     width: 50%;
     padding: 5px 10px;

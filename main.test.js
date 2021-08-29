@@ -1,6 +1,8 @@
 const { add, sub, mul, div, transferCToP, roundTo} = require("./main");
 
-/*testen des add modules*/
+/*
+testen des add modules
+*/
 test("should output 2+3=5, NULL insurance", () => {
 	const testtext = add(2, 3);
 	expect(testtext).toBe(5);
@@ -9,7 +11,9 @@ test("should output 2+3=5, NULL insurance", () => {
 	expect(nulltest).toBe("Not a Number");
 });
 
-/*testen des sub modules*/
+/*
+testen des sub modules
+*/
 test("should output 3-2=1, NULL insurance", () => {
 	const testtext = sub(3, 2);
 	expect(testtext).toBe(1);
@@ -18,7 +22,9 @@ test("should output 3-2=1, NULL insurance", () => {
 	expect(nulltest).toBe("Not a Number");
 });
 
-/*Testen des mul modules*/
+/*
+Testen des mul modules
+*/
 test("should output 3*2=6, NULL insurance",() => {
 	const testtext = mul(3, 2);
 	expect(testtext).toBe(6);
@@ -27,7 +33,9 @@ test("should output 3*2=6, NULL insurance",() => {
 	expect(nulltest).toBe("Not a Number");
 });
 
-/*Testen des div modules*/
+/*
+Testen des div modules
+*/
 test("should output 3/2=1.5, NULL insurance",() => {
 	const testtext = div(3, 2);
 	expect(testtext).toBe(1.5);
@@ -36,7 +44,9 @@ test("should output 3/2=1.5, NULL insurance",() => {
 	expect(nulltest).toBe("Not a Number");
 });
 
-/*Testen des transferCToP modules*/
+/*
+Testen des transferCToP modules
+*/
 test("should output transferCToP(2,2)=2.2, NULL insurance",() => {
 	const testtext = transferCToP("2,2");
 	expect(testtext).toBe("2.2");
@@ -45,7 +55,9 @@ test("should output transferCToP(2,2)=2.2, NULL insurance",() => {
 	expect(nulltest).toBe("transferCToP requires an input!");
 });
 
-/*Testen des roundTo modules*/
+/*
+Testen des roundTo modules
+*/
 test("should output rountTo(2.95,0)=3, roundTo(3.355555,3)=3.356, NULL insurance",() => {
 	const testtext = roundTo(2.95,1);
 	expect(testtext).toBe(3);
