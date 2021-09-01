@@ -5,9 +5,9 @@ Wenn all.test.js ausgeführt wird, müssen die file-paths angepasst werden.
  */
 
 /*
-Integrationstest: Testet Website, ob Addition funktioniert
+Systemtest: Testet Website, ob Addition funktioniert
 */
-test("end2end: addition", async ()=>{
+test("Systemtest: addition", async ()=>{
 	const browser = await puppeteer.launch({
 		headless: true,
 	});
@@ -21,9 +21,9 @@ test("end2end: addition", async ()=>{
 },10000);
 
 /*
-Integrationstest: Testet Website, ob Subtraktion funktioniert
+Systemtest: Testet Website, ob Subtraktion funktioniert
 */
-test("end2end substraction", async ()=>{
+test("Systemtest: substraction", async ()=>{
 	const browser = await puppeteer.launch({
 		headless: true,
 	});
@@ -37,9 +37,9 @@ test("end2end substraction", async ()=>{
 },10000);
 
 /*
-Integrationstest: Testet Website, ob Division funktioniert
+Systemtest: Testet Website, ob Division funktioniert
 */
-test("end2end division", async ()=>{
+test("Systemtest: division", async ()=>{
 	const browser = await puppeteer.launch({
 		headless: true,
 	});
@@ -53,9 +53,9 @@ test("end2end division", async ()=>{
 },10000);
 
 /*
-Integrationstest: Testet Website, ob Multiplikation funktioniert
+Systemtest: Testet Website, ob Multiplikation funktioniert
 */
-test("end2end multiplication", async ()=>{
+test("Systemtest: multiplication", async ()=>{
 	const browser = await puppeteer.launch({
 		headless: true,
 	});
