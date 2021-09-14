@@ -9,7 +9,7 @@ Systemtest: Testet Website, ob Addition funktioniert
 */
 test("Systemtest: addition", async ()=>{
 	const browser = await puppeteer.launch({
-		headless: true,
+		headless: true
 	});
 	const page = await browser.newPage();
 	await page.goto("file:///C:/Users/domin/Documents/Repositories/CodeQuality/index.html"); // Hier
