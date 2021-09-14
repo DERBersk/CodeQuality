@@ -5,7 +5,7 @@ on:
     branches: [ master, main ]
 
 jobs:
-  static test:
+  test:
     runs-on: ubuntu-latest
 
     strategy:
